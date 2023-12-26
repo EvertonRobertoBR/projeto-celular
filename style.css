@@ -1,0 +1,68 @@
+@charset "UTF-8";
+
+*{ /* elementos globais */
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    height: 100vh; /* view port e altura */
+    width: 100vw; /* view port e largura */
+    background-color: black;
+}
+
+body{
+    background:url('imagens/fundo-madeira.jpg') no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed; /* vai fixar a imagem para noa ter rolagem */
+
+    
+    
+}
+
+main{
+    height: 100vh;
+    position: relative;
+    
+}
+
+section#telefone{
+    position: absolute; /* nos permiti centralizar */  /* use os 4 primeiros codigos para centralizar o telefone */
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    height: 627px;
+    width: 311px;
+    background: url('imagens/frame-iphone.png') no-repeat;
+    
+}
+
+iframe#tela{
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 267px;
+    height: 471px;
+}
+
+section#redesocial img{
+    width: 50px;
+    margin: 10px; /* vai separar os icones */
+    border-radius: 50%; /* os icones vão ficar redondos */
+    box-shadow: 2px 2px 5px black;
+    box-sizing: border-box; /* vai impedir que o icone empurre o outro quando voce passar o mouse */
+}
+
+section#redesocial{
+    text-align: right; /* aqui voce pode alterar a posição onde vai ficar os icones */
+}
+
+section#redesocial img:hover{
+    border: 2px solid white;
+    transform: translate(-10px, -10px); /* vai fazer com que o icone se mexa quando voce colocar o mouse em cima */
+    box-shadow: 5px 5px 10px black; /* vai aumentar a sombra quando voce passar o mouse por cima do icone */
+    transition: transform 1s; /* o icone vai se mexer mais vai levar 1s(segundo) para a animação ocorrer */
+
+}
